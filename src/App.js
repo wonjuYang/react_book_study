@@ -1,12 +1,13 @@
-import React from 'react';
-import { Component } from 'react';
-import Mycomponent from './Mycomponent';
+import React, { Component } from 'react';
+import EventPractice from './EventPractice';
 import './App.css';
 
-function App() {
-  return (
-    <Mycomponent name="React" age={4} />
-  );
+class App extends Component {
+  render(){
+    return(
+      <EventPractice />
+    )
+  }
 }
 
 export default App;
