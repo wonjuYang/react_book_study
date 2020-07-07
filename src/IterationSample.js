@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 class IterationSample extends Component {
 
     state ={
+        comment:['여기에', '코멘트를', '열심히', '적으면'],
         names: ['눈사람', '얼음', '눈', '바람'],
         name: ''
     };
@@ -44,11 +45,12 @@ class IterationSample extends Component {
 
 
         const nameList = this.state.names.map(
-            (name, index) => (<li 
+            (name,  index) => (<li 
                                 key={index}
                                 onDoubleClick={() => this.handleRemove(index)}>
                                 {name}
-                            </li>)
+                            </li>
+                            )
         );
 
         return (
